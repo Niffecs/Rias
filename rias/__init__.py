@@ -1,5 +1,6 @@
 import sys
-import func
+from layer import flayer
+
 
 def main() -> None:
     """
@@ -7,8 +8,9 @@ def main() -> None:
     """
     user_data = sys.argv
     print(user_data)
-    func.flayer()
+    flayer()
     sys.exit(0)
+
 
 if __name__ == "__main__":
     main()

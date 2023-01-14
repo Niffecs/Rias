@@ -18,7 +18,7 @@ def def_readme():
 
 setuptools.setup(
     name="rias",
-    version="0.0.3",
+    version="0.0.4",
     author="Niffecs",
     author_email="Niffecs@gmail.com",
     description="Python wrapper for lichess",
@@ -36,9 +36,5 @@ setuptools.setup(
     ],
     python_requires=">=3.10",
     install_requires=def_requirements(),
-    entry_points={
-        'console_scripts': [
-            'rias=rias.__init__:main'
-        ]
-    },
+    entry_points={"console_scripts": ["rias=rias.__init__:main"]},
 )
