@@ -1,4 +1,8 @@
 import sys
+import func
+
 def main() -> None:
-    print("Hello World")
+    user_data = sys.argv
+    print(user_data)
+    func.layer()
     sys.exit(0)

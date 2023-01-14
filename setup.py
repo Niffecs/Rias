@@ -1,6 +1,5 @@
 import setuptools
 
-
 def def_requirements():
     """Check PIP Requirements"""
     with open("requirements.txt") as file_content:
