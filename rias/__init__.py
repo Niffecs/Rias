@@ -7,7 +7,7 @@ def main() -> None:
     """
     user_data = sys.argv
     print(user_data)
-    func.layer()
+    func.flayer()
     sys.exit(0)
 
 if __name__ == "__main__":
