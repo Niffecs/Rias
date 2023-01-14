@@ -1,5 +1,4 @@
 import sys
-from layer import flayer
 
 
 def main() -> None:
@@ -8,7 +7,6 @@ def main() -> None:
     """
     user_data = sys.argv
     print(user_data)
-    flayer()
     sys.exit(0)
 
 
