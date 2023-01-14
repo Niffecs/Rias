@@ -1,7 +1,7 @@
 """
  Start Code
 """
-from hausbauen import startcode
+import hausbauen
 import sys
 
 
