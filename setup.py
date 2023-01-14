@@ -1,5 +1,6 @@
 import setuptools
 
+
 def def_requirements():
     """Check PIP Requirements"""
     with open("requirements.txt") as file_content:
@@ -17,7 +18,7 @@ def def_readme():
 
 setuptools.setup(
     name="rias",
-    version="0.0.1",
+    version="0.0.2",
     author="Niffecs",
     author_email="Niffecs@gmail.com",
     description="Python wrapper for lichess",
