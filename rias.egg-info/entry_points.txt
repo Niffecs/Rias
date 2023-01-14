@@ -1,2 +1,0 @@
-[console_scripts]
-rias = rias.__init__:main
