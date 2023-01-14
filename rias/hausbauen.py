@@ -3,7 +3,7 @@ Function Loader
 """
 
 
-def flayer() -> None:
+def startcode() -> None:
     """
     Function Handler
     """

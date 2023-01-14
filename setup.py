@@ -18,9 +18,9 @@ def def_readme():
 
 setuptools.setup(
     name="rias",
-    version="0.0.7",
+    version="0.0.8",
     author="Niffecs",
-    author_email="Niffecs@gmail.com",
+    author_email="niffecs@gmail.com",
     description="Python wrapper for lichess",
     long_description=def_readme(),
     long_description_content_type="text/markdown",

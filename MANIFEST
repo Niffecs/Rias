@@ -1,5 +1,0 @@
-include README.md
-include LICENSE
-include requirements.txt
-include rias/__main__.py
-include rias/layer.py
