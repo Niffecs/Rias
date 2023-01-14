@@ -25,9 +25,9 @@ setuptools.setup(
     long_description=def_readme(),
     long_description_content_type="text/markdown",
     license="MIT",
-    url="https://github.com/Niffecs/lichesspy",
-    packages=["lichesspy"],
-    package_data={"lichesspy": ["VERSION"]},
+    url="https://github.com/Niffecs/rias",
+    packages=["rias"],
+    package_data={"rias": ["VERSION"]},
     include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 3",
