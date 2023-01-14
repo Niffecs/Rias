@@ -2,4 +2,4 @@ include README.md
 include LICENSE
 include requirements.txt
 include rias/__init__.py
-include rias/func.py
+include rias/layer.py
