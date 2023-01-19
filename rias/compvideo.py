@@ -37,5 +37,9 @@ def compvideo_rename(folder_path="."):
 
 
 def compvideo(content=".") -> None:
+    print("Load Comp Video")
+    print("\t Load Comp Video Remove")
     compvideo_remove(content)
+    print("\t Load Comp Video Rename")
     compvideo_rename(content)
+

@@ -47,6 +47,10 @@ def compimgrename(pathx="."):
 
 
 def compimg(content=".") -> None:
+    print("\t Load Comp Image Module \n")
+    print("\t Load Comp Image Format \n")
     compimgformat_image(content)
+    print("\t Load Comp Image Duplicate \n ")
     compimgremove_duplicate_images(content)
+    print("\t Load Comp Image Rename \n")
     compimgrename(content)

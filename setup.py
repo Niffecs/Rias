@@ -18,10 +18,10 @@ def def_readme():
 
 setuptools.setup(
     name="rias",
-    version="0.0.13",
+    version="0.0.14",
     author="Niffecs",
     author_email="niffecs@gmail.com",
-    description="Python wrapper for lichess",
+    description="Rias CLI by Niffecs",
     long_description=def_readme(),
     long_description_content_type="text/markdown",
     license="MIT",
