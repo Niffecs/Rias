@@ -1,18 +1,16 @@
 """
  Start Code
 """
-import hausbauen
-import sys
 
+import sys
+from rias.helper import loader
 
 def main() -> None:
     """
     Simple Test Function
     """
-    user_data = sys.argv
-    startcode()
-    print(user_data)
-    sys.exit(0)
+    # Simple Test
+    loader(sys.argv[1])
 
 
 if __name__ == "__main__":

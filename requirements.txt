@@ -1,3 +1,6 @@
 requests
 six
 chess
+bs4
+Pillow
+opencv - python
