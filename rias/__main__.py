@@ -5,12 +5,17 @@
 import sys
 from rias.helper import loader
 
+
 def main() -> None:
     """
     Simple Test Function
     """
     # Simple Test
-    loader(sys.argv[1])
+    x = 0
+    for i in sys.argv:
+        print(f"{x} -> {i}")
+        x += 1
+    loader("compimage")
 
 
 if __name__ == "__main__":

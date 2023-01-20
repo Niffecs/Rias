@@ -42,4 +42,3 @@ def compvideo(content=".") -> None:
     compvideo_remove(content)
     print("\t Load Comp Video Rename")
     compvideo_rename(content)
-
