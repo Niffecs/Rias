@@ -7,6 +7,7 @@ from rias.helper import loader
 import rias
 from pkg_resources import get_distribution
 
+
 def main() -> None:
     """
     Simple Test Function
