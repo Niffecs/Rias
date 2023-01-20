@@ -7,9 +7,10 @@ def compimgformat_image(folder_path=".") -> None:
     os.chdir(folder_path)
     for file in os.listdir():
         if ".py" not in file:
-            print(file, f"\t-->\t{file[0:-3:1]}png")
-            layer = file[0:-3:1].replace(".", "")
-            os.rename(file, f"{layer}.png")
+            if file[0:1:1] != ".":
+                # print(file, f"\t-->\t{file[0:-3:1]}png")
+                layer = file[0:-3:1].replace(".", "")
+                os.rename(file, f"{layer}.png")
 
 
 def compimgremove_duplicate_images(folder_path=".") -> None:

@@ -15,7 +15,16 @@ def main() -> None:
     for i in sys.argv:
         print(f"{x} -> {i}")
         x += 1
-    loader("compimage")
+    layer = "Hello"
+    try:
+        layer = sys.argv[1]
+    except Exception as error:
+        print(error)
+    finally:
+        if layer == "Hello":
+            loader("compimage")
+        else:
+            loader(layer)
 
 
 if __name__ == "__main__":
