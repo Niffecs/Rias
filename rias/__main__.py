@@ -6,6 +6,7 @@ import sys
 from rias.helper import loader
 import rias
 
+
 def main() -> None:
     """
     Simple Test Function

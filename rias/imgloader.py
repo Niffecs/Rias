@@ -3,6 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import sys
 
+
 def main() -> None:
     url = sys.argv[2]
     response = requests.get(url)
