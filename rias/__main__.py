@@ -5,14 +5,15 @@
 import sys
 from rias.helper import loader
 import rias
-
+from pkg_resources import get_distribution
 
 def main() -> None:
     """
     Simple Test Function
     """
     # Simple Test
-    print(f"\n rias v{rias.__version__}\n")
+    version = str(get_distribution("rias").version)
+    print(f"\n rias v{version}\n")
     x = 0
     for i in sys.argv:
         print(f"{x} -> {i}")
