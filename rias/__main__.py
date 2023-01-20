@@ -4,13 +4,14 @@
 
 import sys
 from rias.helper import loader
-
+import rias
 
 def main() -> None:
     """
     Simple Test Function
     """
     # Simple Test
+    print(f"\n rias v{rias.__version__}\n")
     x = 0
     for i in sys.argv:
         print(f"{x} -> {i}")
@@ -22,7 +23,8 @@ def main() -> None:
         print(error)
     finally:
         if layer == "Hello":
-            loader("compimage")
+            print("Error")
+            sys.exit(0)
         else:
             loader(layer)
 

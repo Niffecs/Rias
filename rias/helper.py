@@ -4,6 +4,7 @@ Function Loader
 import sys
 from rias.compimg import *
 from rias.compvideo import *
+from rias.imgloader import main as imgloadermain
 
 
 # Loader
@@ -16,3 +17,5 @@ def loader(content) -> None:
         compimg()
     elif content == "compvid" or content == "compvideo":
         compvideo()
+    elif content == "imgloader" or content == "getimg":
+        imgloadermain()
