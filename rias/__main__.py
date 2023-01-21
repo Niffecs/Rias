@@ -19,6 +19,7 @@ def main() -> None:
     for i in sys.argv:
         print(f"{x} -> {i}")
         x += 1
+    print("\n")
     layer = "Hello"
     try:
         layer = sys.argv[1]

@@ -18,7 +18,7 @@ def def_readme():
 
 setuptools.setup(
     name="rias",
-    version="0.0.18",
+    version="0.0.19",
     author="Niffecs",
     author_email="niffecs@gmail.com",
     description="Rias CLI by Niffecs",
