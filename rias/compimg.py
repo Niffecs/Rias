@@ -1,16 +1,18 @@
 import os
 import hashlib
 import uuid
+from os import path
 
 
 def compimgformat_image(folder_path=".") -> None:
     os.chdir(folder_path)
     for file in os.listdir():
-        if ".py" not in file:
-            if file[0:1:1] != ".":
-                # print(file, f"\t-->\t{file[0:-3:1]}png")
-                layer = file[0:-3:1].replace(".", "")
-                os.rename(file, f"{layer}.png")
+        if not path.isdir(file):
+            if ".py" not in file:
+                if file[0:1:1] != ".":
+                    # print(file, f"\t-->\t{file[0:-3:1]}png")
+                    layer = file[0:-3:1].replace(".", "")
+                    os.rename(file, f"{layer}.png")
 
 
 def compimgremove_duplicate_images(folder_path=".") -> None:
@@ -20,6 +22,12 @@ def compimgremove_duplicate_images(folder_path=".") -> None:
         for f in os.listdir(folder_path)
         if f.endswith(".jpg") or f.endswith(".png") or f.endswith(".jpeg")
     ]
+    test_image_files = image_files
+    image_files = []
+    for runner in test_image_files:
+        if not path.isdir(runner):
+            image_files.append(str(runner))
+
     delete = []
     # Für jedes Bild wird ein Hash-Wert berechnet
     image_hashes = {}

@@ -2,6 +2,7 @@ import os
 import hashlib
 import sys
 import uuid
+from os import path
 
 
 def compvideo_remove(folder_path="."):
@@ -11,6 +12,11 @@ def compvideo_remove(folder_path="."):
         for f in os.listdir(folder_path)
         if f.endswith(".mp4") or f.endswith(".MP4") or f.endswith("mp4")
     ]
+    test_image_files = image_files
+    image_files = []
+    for runner in test_image_files:
+        if not path.isdir(runner):
+            image_files.append(str(runner))
 
     # Für jedes Bild wird ein Hash-Wert berechnet
     image_hashes = {}
@@ -31,6 +37,13 @@ def compvideo_rename(folder_path="."):
         for f in os.listdir(folder_path)
         if f.endswith(".mp4") or f.endswith(".MP4") or f.endswith("mp4")
     ]
+
+    test_image_files = image_files
+    image_files = []
+    for runner in test_image_files:
+        if not path.isdir(runner):
+            image_files.append(str(runner))
+
     for file in image_files:
         uuidx = str(uuid.uuid4().hex).replace("-", "")[0:21:1]
         os.rename(file, f"{uuidx}.mp4")
